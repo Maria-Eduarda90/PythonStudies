@@ -5,7 +5,7 @@ resolved = dns.resolver.Resolver()
 arquivo = open("C:/Users/Doctor/Documents/programas/program_in_python/bruteforce/wordlist.txt", "r")
 subdominios = arquivo.read().splitlines()
 
-alvo = "bancocn.com"
+alvo = "teste.com"
 
 for subdominio in subdominios:
     try:
