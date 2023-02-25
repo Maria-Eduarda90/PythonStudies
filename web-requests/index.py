@@ -5,4 +5,4 @@ try:
     request = requests.get(req)
     print(request.text)
 except Exception as err:
-    print('Requisição deu error: ', err)
+    print('Requisição deu erro: ', err)
