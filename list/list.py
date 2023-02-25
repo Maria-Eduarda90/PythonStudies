@@ -14,7 +14,7 @@ while resp =="S":
 
 for indice in range(0, len(equipments)):
     print("\nEquipamento..: ", (indice+1))
-    print("Nome..: ", (equipments[indice]))
-    print("Valor........: ", (values[indice]))
-    print("serial.......: ", (serials[indice]))
-    print("Departamento.: ", (department[indice]))
+    print("Nome...........: ", (equipments[indice]))
+    print("Valor..........: ", (values[indice]))
+    print("serial.........: ", (serials[indice]))
+    print("Departamento...: ", (department[indice]))
