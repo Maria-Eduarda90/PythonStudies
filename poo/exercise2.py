@@ -1,4 +1,4 @@
-#Método classe x Método Estático
+# Método classe x Método Estático
 
 from datetime import date
 
