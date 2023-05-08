@@ -9,7 +9,11 @@ class Conta:
         self.saldo += valor
 
     def sacar(self, valor):
-        self.saldo -= valor
+        if self.saldo < valor:
+            return False
+        else:
+            self.saldo -= valor
+            return True
 
     def gerar_extrato(self):
         print(f'numero: {self.numero}\ncpf: {self.cpf}\nsaldo: {self.saldo}')
@@ -17,8 +21,9 @@ class Conta:
 def main():
     c1 = Conta(1, 1, "João", 0)
     c1.depositar(300)
-    c1.sacar(100)
+    saque = c1.sacar(100)
     c1.gerar_extrato()
+    print(f'O saque foi realizado? {saque}')
 
 if __name__ == "__main__":
     main()
