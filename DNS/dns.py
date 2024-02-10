@@ -8,6 +8,7 @@ txt = diretorio + "\\DNS\\bruteforce.txt"
 try:
     with open(txt, "r") as arquivo:
         bruteforce = arquivo.readlines()
+
     
     for name in bruteforce:
         DNS = name.strip("\n") + "." + dominio
