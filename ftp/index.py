@@ -6,7 +6,7 @@ print(ftp.getwelcome())
 user = input("Digite o usuario: ")
 password = input("Digite a senha: ")
 
-ftp.login(userm password)
+ftp.login(user, password)
 
 print("Diretório atual de trabalho: ", ftp.pwd())
 
